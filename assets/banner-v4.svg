@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" font-family="'Segoe UI',Helvetica,Arial,sans-serif">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#04070F"/><stop offset="1" stop-color="#0E0A24"/></linearGradient>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00F5A0"/><stop offset=".5" stop-color="#00B4DB"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+<radialGradient id="a1"><stop offset="0" stop-color="#00B4DB" stop-opacity=".35"/><stop offset="1" stop-color="#00B4DB" stop-opacity="0"/></radialGradient>
+<radialGradient id="a2"><stop offset="0" stop-color="#8B5CF6" stop-opacity=".45"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+<pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#fff" fill-opacity=".08"/></pattern>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="0" stdDeviation="14" flood-color="#00B4DB" flood-opacity=".35"/></filter>
+<clipPath id="card"><rect width="1200" height="420" rx="28"/></clipPath>
+</defs>
+<style>
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+@keyframes line{from{opacity:0;transform:translateX(-10px)}to{opacity:1;transform:none}}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes drift{0%,100%{transform:translate(0,0)}50%{transform:translate(50px,25px)}}
+@keyframes drift2{0%,100%{transform:translate(0,0)}50%{transform:translate(-50px,-20px)}}
+@keyframes ping{0%{r:5;opacity:.8}100%{r:16;opacity:0}}
+@keyframes blink{50%{opacity:0}}
+@keyframes hue{0%,100%{opacity:.5}50%{opacity:1}}
+.a1{animation:drift 10s ease-in-out infinite}.a2{animation:drift2 12s ease-in-out infinite}
+.r{animation:rise .9s ease-out both}
+</style>
+<g clip-path="url(#card)">
+<rect width="1200" height="420" fill="url(#bg)"/>
+<rect width="1200" height="420" fill="url(#dots)"/>
+<circle class="a1" cx="200" cy="80" r="300" fill="url(#a1)"/>
+<circle class="a2" cx="1000" cy="330" r="320" fill="url(#a2)"/>
+
+<g class="r">
+<rect x="482" y="52" width="236" height="34" rx="17" fill="#00F5A0" fill-opacity=".1" stroke="#00F5A0" stroke-opacity=".5"/>
+<circle cx="504" cy="69" r="5" fill="#00F5A0"/><circle cx="504" cy="69" r="5" fill="none" stroke="#00F5A0" style="animation:ping 1.8s ease-out infinite"/>
+<text x="520" y="74" font-size="13.5" font-weight="600" fill="#9FF7D5">Open to entry-level AI roles</text>
+</g>
+<g class="r" style="animation-delay:.15s">
+<text x="600" y="190" font-size="92" font-weight="800" fill="#F8FAFC" letter-spacing="-1" text-anchor="middle">Utsavi <tspan fill="url(#g)" filter="url(#glow)">Narola</tspan></text>
+</g>
+<g class="r" style="animation-delay:.3s">
+<text x="600" y="240" text-anchor="middle" font-size="26" font-weight="600" fill="#E2E8F0">AI Engineer <tspan fill="#00B4DB">/</tspan> Agentic AI <tspan fill="#8B5CF6">/</tspan> RAG Systems</text>
+<text x="600" y="274" text-anchor="middle" font-size="16" fill="#94A3C4">I build LLM apps end to end, from retrieval to the UI.</text>
+</g>
+<g transform="translate(218,322)"><g style="animation:float 4s ease-in-out 0.0s infinite"><rect width="92" height="34" rx="17" fill="#fff" fill-opacity=".05" stroke="#FFD43B" stroke-opacity=".6"/><circle cx="17" cy="17" r="4.5" fill="#FFD43B"/><text x="29" y="22" font-size="13" font-weight="600" fill="#E6EDF3">Python</text></g></g>
+<g transform="translate(320,322)"><g style="animation:float 4s ease-in-out 0.35s infinite"><rect width="98" height="34" rx="17" fill="#fff" fill-opacity=".05" stroke="#00D4A6" stroke-opacity=".6"/><circle cx="17" cy="17" r="4.5" fill="#00D4A6"/><text x="29" y="22" font-size="13" font-weight="600" fill="#E6EDF3">FastAPI</text></g></g>
+<g transform="translate(428,322)"><g style="animation:float 4s ease-in-out 0.7s infinite"><rect width="108" height="34" rx="17" fill="#fff" fill-opacity=".05" stroke="#7DD3FC" stroke-opacity=".6"/><circle cx="17" cy="17" r="4.5" fill="#7DD3FC"/><text x="29" y="22" font-size="13" font-weight="600" fill="#E6EDF3">LangChain</text></g></g>
+<g transform="translate(546,322)"><g style="animation:float 4s ease-in-out 1.0499999999999998s infinite"><rect width="112" height="34" rx="17" fill="#fff" fill-opacity=".05" stroke="#C084FC" stroke-opacity=".6"/><circle cx="17" cy="17" r="4.5" fill="#C084FC"/><text x="29" y="22" font-size="13" font-weight="600" fill="#E6EDF3">LangGraph</text></g></g>
+<g transform="translate(668,322)"><g style="animation:float 4s ease-in-out 1.4s infinite"><rect width="92" height="34" rx="17" fill="#fff" fill-opacity=".05" stroke="#F43F5E" stroke-opacity=".6"/><circle cx="17" cy="17" r="4.5" fill="#F43F5E"/><text x="29" y="22" font-size="13" font-weight="600" fill="#E6EDF3">Qdrant</text></g></g>
+<g transform="translate(770,322)"><g style="animation:float 4s ease-in-out 1.75s infinite"><rect width="118" height="34" rx="17" fill="#fff" fill-opacity=".05" stroke="#60A5FA" stroke-opacity=".6"/><circle cx="17" cy="17" r="4.5" fill="#60A5FA"/><text x="29" y="22" font-size="13" font-weight="600" fill="#E6EDF3">PostgreSQL</text></g></g>
+<g transform="translate(898,322)"><g style="animation:float 4s ease-in-out 2.0999999999999996s infinite"><rect width="84" height="34" rx="17" fill="#fff" fill-opacity=".05" stroke="#38BDF8" stroke-opacity=".6"/><circle cx="17" cy="17" r="4.5" fill="#38BDF8"/><text x="29" y="22" font-size="13" font-weight="600" fill="#E6EDF3">React</text></g></g>
+
+</g>
+<rect x="1.5" y="1.5" width="1197" height="417" rx="28" fill="none" stroke="url(#g)" stroke-width="2" stroke-opacity=".55"/>
+</svg>
