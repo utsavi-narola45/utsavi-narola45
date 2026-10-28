@@ -110,7 +110,7 @@ flowchart LR
 **Stack:** `Python` `FastAPI` `LangGraph` `Groq` `Tavily` `React`
 **Highlights:** multi-agent orchestration · web search integration · source-referenced reports
 
-🔗 **[View Repository](#)** · 🎥 **[Demo](#)**
+🔗 **[View Repository](https://github.com/utsavi-narola45/questora-ai)** · 🎥 **[Demo](https://utsavi-narola45.github.io/questora-ai/)**
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00F5A0,50:00B4DB,100:7F5AF0&height=3" width="100%" alt="divider"/>
 
